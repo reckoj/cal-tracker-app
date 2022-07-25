@@ -15,7 +15,7 @@ import (
 
 
 func DBinstance() *mongo.Client{
-	MongoDB := "mongodb+srv://recko123:recko321@savrapp.uplw3.mongodb.net/?retryWrites=true&w=majority"
+	MongoDB := "localhost:8000:"
 	client, err := mongo.NewClient(options.Client().ApplyURI(MongoDB))
 	if err != nil {
 		log.Fatal(err)
